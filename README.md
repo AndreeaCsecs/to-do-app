@@ -1,7 +1,1 @@
-# todo-app
-# to-do-app
-# to-do-app
-# to-do-app
-# to-do-app
-# to-do
-# to-do-list-app
+A simple to-do app built using React that allows users to create and manage a list of tasks with features such as drag and drop tasks, not started, in progress, and completed tasks, week day choice for new tasks. The app is integrated with third-party libraries like React-Bootstrap to provide a modern and visually appealing interface.

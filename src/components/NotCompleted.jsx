@@ -14,7 +14,7 @@ const weekDays = [
 const NotCompleted = ({ tasks, setTasks, title, status }) => {
   const [newTask, setNewTask] = useState("");
   const [filter, setFilter] = useState("");
-  const [day, setDay] = useState("Monday");
+  const [day, setDay] = useState("MONDAY");
 
   const createTask = () => {
     setTasks((tasks) => [
@@ -80,7 +80,6 @@ const NotCompleted = ({ tasks, setTasks, title, status }) => {
 
       <div className="pb-3">
         <input
-          className=""
           id="search"
           type="text"
           placeholder="SEARCH"
@@ -90,7 +89,12 @@ const NotCompleted = ({ tasks, setTasks, title, status }) => {
       </div>
 
       {tasks
-        .filter((item) => item.status === status && item.isCompleted === false)
+        .filter(
+          (item) =>
+            item.status === status &&
+            item.isCompleted === false &&
+            item.title.toLowerCase().includes(filter.toLowerCase())
+        )
         .map((item) => (
           <div
             draggable

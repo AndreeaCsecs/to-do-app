@@ -17,6 +17,7 @@ const Completed = ({ tasks }) => {
           <h1>Completed</h1>
         </label>
       </div>
+
       <input
         id="search"
         type="text"
@@ -25,6 +26,7 @@ const Completed = ({ tasks }) => {
         onChange={(e) => setFilter(e.target.value)}
       />
       <br></br>
+
       {tasks
         .filter((item) =>
           item.title.toLowerCase().includes(filter.toLowerCase())

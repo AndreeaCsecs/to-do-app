@@ -1,7 +1,6 @@
 
 # To do app
 
-People Always Talk About The Weather... They are always checking the weather in native and web applications.
 
 ## Story
 
